@@ -81,7 +81,7 @@
   padding-top: 300px;
 }
 
-// Looping items 5px to 200px
+// Looping universal items 5px to 200px
 
 @for $i from 1 through 40 {
   .plr-#{5 * $i} {

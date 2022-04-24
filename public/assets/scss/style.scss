@@ -33,38 +33,27 @@ STYLESHEET INDEX START
 
 
 
-STYLESHEET INDEX END
+STYLE SHEET INDEX END
 
 *********************----------------*****************/
-
-
 
 /****************************************************
                  Default Styles
 *****************************************************/
 
-@import 'default/variables';
-@import 'default/mixins';
-@import 'default/typography';
-@import 'default/reset';
-@import 'default/animation';
-@import 'default/spacing';
-@import 'default/shortCode';
-@import 'default/extends';
-@import 'default/padding';
-@import 'default/margin';
-
+@import "default/variables";
+@import "default/mixins";
+@import "default/typography";
+@import "default/reset";
+@import "default/animation";
+@import "default/spacing";
+@import "default/quickCode";
+@import "default/extends";
 
 /****************************************************
                  Header Styles
 *****************************************************/
 
-
-
-
 /****************************************************
                  Footer Styles
 *****************************************************/
-
-
-

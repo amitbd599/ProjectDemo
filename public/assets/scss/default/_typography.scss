@@ -138,24 +138,61 @@ a:hover {
   text-decoration: none;
 }
 
-
-button, input, select, textarea{
+button,
+input,
+select,
+textarea {
   background: transparent;
   border: 1px solid var(--color-border);
   transition: all 0.4s ease-out 0s;
   color: var(--paragraph-color);
 }
 
-
-select, input, textarea{
+select,
+input,
+textarea {
   width: 100%;
   font-size: 14px;
 }
 
-select,input{
+select,
+input {
   height: 40px;
 }
 
+// Font Size Control Here...
+
+// universal-device
+@for $i from 1 through 100 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+// lg-layout-device
+@media #{$lg-layout-device} {
+  @for $i from 1 through 100 {
+    .font-lg-#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+// lg-layout-device
+@media #{$md-layout-device} {
+  @for $i from 1 through 100 {
+    .font-md-#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
+// lg-layout-device
+@media #{$sm-layout-device} {
+  @for $i from 1 through 100 {
+    .font-sm-#{$i} {
+      font-size: #{$i}px !important;
+    }
+  }
+}
 
 @media #{$md-layout-device} {
   h1,
@@ -164,7 +201,7 @@ select,input{
   }
   h2,
   .h2 {
-    font-size: calc(var(--h2) - 2);
+    font-size: var(--h2) - 2;
   }
   h3,
   .h3 {
@@ -189,5 +226,31 @@ select,input{
   h1,
   .h1 {
     font-size: var(--h1) - 8;
+  }
+}
+
+// Text specialized
+
+.text-italic {
+  font-style: italic;
+}
+.text-normal {
+  font-style: normal;
+}
+.text-underline {
+  font-style: underline;
+}
+
+/* Height and width */
+
+.fullscreen {
+  min-height: 100vh;
+  width: 100%;
+  @media #{$sm-layout-device} {
+    min-height: auto;
+  }
+  &.empty-div {
+    pointer-events: none;
+    background: transparent;
   }
 }
