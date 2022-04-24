@@ -1,0 +1,30 @@
+/*===============================================
+                 Typography
+=================================================*/
+
+.p_text{
+    font-size: 18px;
+    line-height: 32px;
+    @media #{$sm-layout-device}{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.letterSpace_2{
+    letter-spacing: 2px;
+}
+
+.padding_left_right-120{
+    @media #{$lg-layout-device}{
+        padding: 0 60px !important;
+    }
+    @media #{$md-layout-device}{
+        padding: 0 60px !important;
+    }
+    @media #{$sm-layout-device}{
+        padding: 0 30px !important;
+    }
+}
+
+

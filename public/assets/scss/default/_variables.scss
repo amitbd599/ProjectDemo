@@ -16,8 +16,7 @@
   --gray-color-mid: #a9a9a9;
   --color-opacity: hsla(0, 0%, 34%, 0.275);
   --color-light: #d4d4d4;
-  --color-border: #a5a5a5;
-  --color-light: #f5f5f5;
+  --color-border: #d4d4d4;
   --color-white: #ffffff;
 
   // Alert Colors
@@ -108,6 +107,6 @@ $extra-device: "only screen and (min-width: 1600px) and (max-width: 1919px)";
 $laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
 $lg-layout-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
 $md-layout-device: "only screen and (min-width: 768px) and (max-width: 991px)";
-$sm-layout: "only screen and (max-width: 767px)";
-$mobile-layout: "only screen and (max-width: 575px)";
+$sm-layout-device: "only screen and (max-width: 767px)";
+$mobile-lg-layout: "only screen and (max-width: 575px)";
 $mobile-sm-layout: "only screen and (max-width: 479px)";
